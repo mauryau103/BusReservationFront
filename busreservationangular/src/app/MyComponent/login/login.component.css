@@ -1,0 +1,41 @@
+.login{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+.input{
+    margin: auto;
+    width: 70%;
+}
+.text-large{
+    font-size: 120%;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 30%;
+    border-radius: 60%;
+    height: 10%;
+  }
+  
+  .con{
+    background-color:#f1f1f1;
+    height: 70px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a{
+    display: inline-block;
+    color: darkgreen;
+    font-weight: bolder;
+  }
+

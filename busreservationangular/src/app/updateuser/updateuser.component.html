@@ -1,0 +1,27 @@
+
+
+<div class = "container">
+    <h3> Update User </h3> 
+  
+    <form #Registerform ="ngForm" (ngSubmit)="onSubmit()"  >
+    <div class="form-group">
+      <label>User Id</label><br>
+      <input type="number" class="form-control" id="id" [(ngModel)] ="user.userId" name="id" #userId="ngModel"><br>
+    </div>
+    <div class="form-group">
+      <label>User Name</label><br>
+      <input type="text" class="form-control" id="userName" [(ngModel)] ="user.userName" name="name" #userName="ngModel"><br>
+    </div>
+    <div class="form-group">
+      <label>User Contact Number </label><br>
+      <input type="number" class="form-control" id="contactNo" [(ngModel)] ="user.contactNo" name="contact_no" #contactNo="ngModel"><br>
+    </div>
+  
+    <button class ="btn btn-success" type="submit">SUBMIT</button>
+    </form>
+  </div>
+  
+  
+  
+  
+  

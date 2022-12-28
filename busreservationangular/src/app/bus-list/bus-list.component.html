@@ -1,0 +1,43 @@
+<h2 style="text-align: center;">Bus List</h2>
+
+<button (click)="addBus()" class="btn btn-primary">Add Bus</button>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>bus Id</th>
+            <th>Plate No</th>
+            <th>Type</th>
+            <th>Capacity</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Arrival Time</th>
+            <th>Fare Amount</th>
+            <th>Remark</th>
+            <th>Actions</th>
+            <!-- <th>Driver</th> -->
+        </tr>
+    </thead>
+    <tbody style="font-size: medium;">
+        <tr *ngFor="let bus of buses">
+            <td>{{bus.busId}}</td>
+            <td>{{bus.busPlateNo}}</td>
+            <td>{{bus.busType}}</td>
+            <td>{{bus.capacity}}</td>
+            <td>{{bus.source}}</td>
+            <td>{{bus.destination}}</td>
+            <td>{{bus.scheduleDate}}</td>
+            <td>{{bus.departureTime}}</td>
+            <td>{{bus.estimatedArrivalTime}}</td>
+            <td>{{bus.fareAmount}}</td>
+            <td>{{bus.remark}}</td>
+            <td>
+                <button (click) = "updateBus(bus.busId)" class="btn btn-info">Update</button>
+                <button (click)= "deleteBus(bus.busId)" class="btn btn-danger" style="margin: 10px;">Delete</button>
+            </td>
+            <!-- <td>{{bus.driver}}</td> -->
+        </tr>
+    </tbody>
+</table>

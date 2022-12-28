@@ -1,0 +1,158 @@
+<div class="searchBus">
+    <h2 class="text-center">Search Bus</h2>
+    <form class="form my-5">
+        <p class="text">Search:</p>
+        <div class="content">
+            <input list="fromCity" class="form-control" placeholder="From">
+            <datalist id="fromCity">
+                <option value="Mumbai">
+                <option value="Delhi">
+                <option value="Surat">
+                <option value="Pune">
+                <option value="Thane">
+            </datalist>
+        </div>
+        <div class="content">
+            <input list="toCity" class="form-control" placeholder="To">
+            <datalist id="toCity">
+                <option value="Mumbai">
+                <option value="Delhi">
+                <option value="Surat">
+                <option value="Pune">
+                <option value="Thane">
+            </datalist>
+        </div>
+        <div class="date content">
+            <div class="md-form md-outline input-with-post-icon datepicker" id="accLabels">
+                <input placeholder="From Date" type="date" id="accessibility-example" class="form-control">
+            </div>
+        </div>
+
+        <div class="date content">
+            <div class="md-form md-outline input-with-post-icon datepicker" id="accLabels">
+                <input placeholder="To date" type="date" id="accessibility-example" class="form-control">
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-success mx-1" (click)="showBuses()">Search</button>
+            <button type="reset" class="btn btn-danger mx-1">Reset</button>
+        </div>
+    </form>
+
+    <h2 style="text-align: center;">Bus List</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>bus Id</th>
+            <th>Plate No</th>
+            <th>Type</th>
+            <th>Capacity</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Arrival Time</th>
+            <th>Fare Amount</th>
+            <th>Remark</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody style="font-size: medium;">
+        <tr *ngFor="let bus of buses">
+            <td>{{bus.busId}}</td>
+            <td>{{bus.busPlateNo}}</td>
+            <td>{{bus.busType}}</td>
+            <td>{{bus.capacity}}</td>
+            <td>{{bus.source}}</td>
+            <td>{{bus.destination}}</td>
+            <td>{{bus.scheduleDate}}</td>
+            <td>{{bus.departureTime}}</td>
+            <td>{{bus.estimatedArrivalTime}}</td>
+            <td>{{bus.fareAmount}}</td>
+            <td>{{bus.remark}}</td>
+            <td><button class="btn btn-primary" (click)="bookBus(bus.busId)">Book</button></td>
+        </tr>
+    </tbody>
+</table>
+
+
+    <!-- <div class="busInfo my-5">
+        <div class="bus">
+            <div class="image">
+                <img src="../../../assets/pic8.jpg" alt="">
+            </div>
+            <p>Bus No:100</p>
+            <p>Bus Type:AC</p>
+            <p>Destination:Mumbai to Surat</p>
+            <p>Scheduled Date:30/10/2022</p>
+            <p>Departure Time:11:00 am</p>
+            <p>Fare:800Rs</p>
+            <button type="button" class="btn btn-success">Book</button>
+        </div>
+
+        <div class="bus">
+            <div class="image">
+                <img src="../../../assets/pic9.jpg" alt="">
+            </div>
+            <p>Bus No:101</p>
+            <p>Bus Type:Non AC</p>
+            <p>Destination:Mumbai to Jaipur</p>
+            <p>Scheduled Date:28/10/2022</p>
+            <p>Departure Time:1:00 pm</p>
+            <p>Fare:1000Rs</p>
+            <button type="button" class="btn btn-success">Book</button>
+        </div>
+        <div class="bus">
+            <div class="image">
+                <img src="../../../assets/pic10.jpg" alt="">
+            </div>
+            <p>Bus No:102</p>
+            <p>Bus Type:AC</p>
+            <p>Destination:Surat to Ahemdabad</p>
+            <p>Scheduled Date:1/11/2022</p>
+            <p>Departure Time:11:00 am</p>
+            <p>Fare:700Rs</p>
+            <button type="button" class="btn btn-success">Book</button>
+        </div>
+
+        <div class="bus">
+            <div class="image">
+                <img src="../../../assets/pic11.jpg" alt="">
+            </div>
+            <p>Bus No:103</p>
+            <p>Bus Type:Non AC</p>
+            <p>Destination:Praygraj to Banaras</p>
+            <p>Scheduled Date:29/10/2022</p>
+            <p>Departure Time:3:00 pm</p>
+            <p>Fare:1500Rs</p>
+            <button type="button" class="btn btn-success">Book</button>
+        </div>
+
+        <div class="bus">
+            <div class="image">
+                <img src="../../../assets/pic12.jpg" alt="">
+            </div>
+            <p>Bus No:105</p>
+            <p>Bus Type:Non AC</p>
+            <p>Destination:Mumbai to Kolhapur</p>
+            <p>Scheduled Date:30/10/2022</p>
+            <p>Departure Time:9:00 am</p>
+            <p>Fare:2000Rs</p>
+            <button type="button" class="btn btn-success">Book</button>
+        </div>
+
+        <div class="bus">
+            <div class="image">
+                <img src="../../../assets/pic13.jpg" alt="">
+            </div>
+            <p>Bus No:106</p>
+            <p>Bus Type:AC</p>
+            <p>Destination:Surat to Dadar</p>
+            <p>Scheduled Date:2/11/2022</p>
+            <p>Departure Time:11:00 am</p>
+            <p>Fare:1000Rs</p>
+            <button type="button" class="btn btn-success">Book</button>
+        </div>
+    </div>-->
+</div> 

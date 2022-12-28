@@ -1,0 +1,28 @@
+
+
+<div class = "container">
+    <h3> Update Driver </h3> 
+  
+    <form #Registerform ="ngForm" (ngSubmit)="onSubmit()"  >
+    <div class="form-group">
+      <label>Driver Id</label><br>
+      
+      <input type="number" class="form-control" id="id" [(ngModel)] ="driver.driverId" name="id" #id="ngModel"><br>
+    </div>
+    <div class="form-group">
+      <label>Driver Name</label><br>
+      <input type="text" class="form-control" id="name" [(ngModel)] ="driver.driverName" name="name" #name="ngModel"><br>
+    </div>
+    <div class="form-group">
+      <label>Driver Contact Number </label><br>
+      <input type="number" class="form-control" id="contact_no" [(ngModel)] ="driver.driverContact" name="contact_no" #contact_no="ngModel"><br>
+    </div>
+  
+    <button class ="btn btn-success" type="submit">SUBMIT</button>
+    </form>
+  </div>
+  
+  
+  
+  
+  

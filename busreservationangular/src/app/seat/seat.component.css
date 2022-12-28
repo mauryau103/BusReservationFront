@@ -1,0 +1,33 @@
+
+.buttons{
+    height:40px;
+    width:100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: darkcyan;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    }
+    
+    h1{
+        padding-left: 525px;
+        padding-top: 50px;
+        font-size:50px
+    }
+.iframe{
+    padding-top: 40px;
+    padding-left: 350px;
+    padding-right: 350px;
+    
+}
+
+#Bookbutton{
+    margin-left: 580px;
+    margin-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 25px;
+}

@@ -1,0 +1,13 @@
+.signup{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+}
+.input{
+    width: 70%;
+    margin: auto;
+}
+
+

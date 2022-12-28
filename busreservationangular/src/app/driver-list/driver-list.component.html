@@ -1,0 +1,26 @@
+<div class = "container">
+    <h2>Driver List</h2>
+
+    <button class="btn btn-primary" (click)="addDriver()">Add Driver</button>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>DriverId</th>
+                <th>DriverName</th>
+                <th>DriverContactNo.</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor ="let driver of drivers">
+             <td>{{driver.driverId}}</td>
+             <td>{{driver.driverName}}</td>
+             <td>{{driver.driverContact}}</td>
+             <td>
+                <button (click)="updateDriver(driver.driverId)" class="btn btn-info">Update</button>
+                <button (click) = "deleteDriver(driver.driverId)" class="btn btn-danger" style="margin: 10px;">Delete</button>
+             </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>

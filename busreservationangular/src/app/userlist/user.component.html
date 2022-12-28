@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="card">
+<h3 class="text-center">Users List</h3>
+    <!-- <h4><a routerLink="createuser" routerLinkActive="active">Add User</a></h4> -->
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                        <th>Id</th>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>ContactNo</th>
+                        <th>EmailId</th>
+                        <th>UserName</th>
+                        <th>UserPassword</th>
+                        <th>Take Action</th>
+                </thead>
+                <tbody>
+                            
+                    <tr *ngFor = "let user of users">
+                        <td>{{user.userId}}</td>                              
+                        <td>{{user.firstName}}</td>
+                        <td>{{user.lastName}}</td>
+                        <td>{{user.contactNo}}</td>
+                        <td>{{user.emailId}}</td>
+                        <td>{{user.userName}}</td>
+                        <td>{{user.userPassword}}</td>
+                        <!-- <td> <button (click)="updateUser(user.userId)" class="btn btn-info">Update</button>
+                        <button (click) = "deleteUser(user.userId)" class="btn btn-danger" style="margin: 10px;">Delete</button></td> -->
+                        <td><a [routerLink]="['/updateuser/',user.userId]">Update</a> &nbsp; &nbsp; &nbsp;
+                        <i (click)="deleteUser(user.userId)">Delete</i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

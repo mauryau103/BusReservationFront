@@ -1,0 +1,45 @@
+h1{
+    color: #fff;
+    margin: 10px;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+
+.imageofuser{
+    /* / padding-left: 800px; /
+    / display: block; /
+    / top: -160px; /
+    / right: -706px; / */
+    position: absolute;
+    top:150px;
+    right:60px;
+ 
+}
+img{
+    border: 5px solid #555;
+    border-radius: 100px;
+    width: 550px;    
+}
+
+li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ul li a {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    display: block;
+    padding: 5px 10px;
+    background-color:#800000;
+    border-radius: 4px;
+    width:650px;
+    margin-top: 7px;
+    padding-bottom: 5px;
+}
+  
+
+
+

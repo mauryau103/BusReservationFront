@@ -1,0 +1,42 @@
+h2{
+    background-color:#ccc;
+    padding: 15px;
+    color: white;
+}
+.form{
+    background-color:#800000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 12px;
+}
+.content{
+    margin: 10px;
+    width: 18%;
+}
+p.text{
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 10px;
+}
+
+.busInfo{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+.busInfo .bus{
+    border: .1px solid black;
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+}
+
+
+.busInfo .bus .image img{
+    width: 300px;
+    height: 200px;
+}
+
+
